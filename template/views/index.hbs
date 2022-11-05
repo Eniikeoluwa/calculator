@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eniks Calculator</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="images/calculator.jpeg" rel="icon">
+</head>
+<body>  
+    <main>
+        <div id="fid">
+           <span>Calculator</span>
+           <div class="cal">
+           <div> <h3>|||</h3></div>
+            <div><h1>Standard</h1></div>
+           </div>
+          <div>
+              <input type="text" id="subscreen" style="height: 20px; font-size: 14px;">
+            <input type="text" id="screen" placeholder="0" readonly>
+            <div class="btn">
+                <button id="bg" onclick="show1('')">MC</button>
+                <button id="bg">MR</button>
+                <button>M+</button>
+                <button>M-</button>
+                <button>MS</button>
+                <button id="bg">M*</button>
+            </div>
+
+            <div class="btn2">
+            <button onclick="operate('%')">%</button>
+            <button>CE</button>
+            <button onclick="clear1(this)">C</button>
+            <button onclick="CLS(this)">back</button>
+            </div>
+
+            <div class="btn2" style="margin-top: 2px;">
+              <button onclick="show1('')"><sup>1</sup>/<sub>x</sub></button>
+            <button onclick="show1('')">x<sup>2</sup></button>
+            <button>sq</button>
+            <button onclick="operate('/')">/</button>
+            </div>
+
+            <div class="btn3" style="margin-top: 2px;">
+            <button onclick="show1('7')">7</button>
+            <button onclick="show1('8')">8</button>
+            <button onclick="show1('9')">9</button>
+            <button id="diff" onclick="operate('*')">x</button>
+            </div>
+
+            <div class="btn3" style="margin-top: 2px;">
+            <button onclick="show1('4')">4</button>
+            <button onclick="show1('5')">5</button>
+            <button onclick="show1('6')">6</button>
+            <button id="diff" onclick="operate('-')">-</button>
+            </div>
+
+                <div class="btn3" style="margin-top: 2px;">
+                <button onclick="show1('1')">1</button>
+                <button onclick="show1('2')">2</button>
+                <button onclick="show1('3')">3</button>
+                <button id="diff" onclick="operate('+')">+</button>
+                </div>
+
+                <div class="btn3" style="margin-top: 2px;">
+                <button><sup>+</sup>/<sub>-</sub></button>
+                <button onclick="show1('0')">0</button>
+                <button onclick="show1('.')">.</button>
+                <button id="diff" style="background-color: rgb(26, 182, 221);" onclick="sum(this)">=</button>
+                </div>
+
+          </div>    
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>

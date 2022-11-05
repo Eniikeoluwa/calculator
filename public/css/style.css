@@ -1,0 +1,100 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#fid{
+    width: 400px;
+    height: 575px;
+    padding: 3px;
+    background-color: rgb(221, 215, 215);
+    border: 1px solid;
+    box-shadow: 0px 0px 10px rgb(105, 103, 103);
+    margin-top: 10px;
+}
+#fid>span{
+    margin: 0px;
+    font-size: 15px;
+    padding-left: 8px;
+}
+.cal{
+    display: flex;
+   align-items: center;
+   justify-content: space-around;
+   width: 110px;
+}
+.cal>div>h1{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#fid>div>input{
+    width: 395px;
+    height: 90px;
+    text-align: right;
+    font-size: 40px;
+    font-weight: bolder;
+    background-color: rgb(221, 215, 215);
+    outline: none;
+    border: none;
+}
+ .btn{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+}
+.btn>button{
+    width: 64px;
+    height: 35px;
+    background-color: transparent;
+    border: none;
+    font-weight: 550;
+}
+#bg{
+    background-color: transparent;
+    color: gray;
+    border: none;
+}
+.btn2{
+    display: flex;
+    justify-content: space-between;
+}
+.btn2>button{
+    width: 98px;
+    height: 55px;
+    border: none;
+}
+button:hover{
+    background-color: rgb(223, 223, 223);
+}
+button:active{
+    transition: .0s;
+    box-shadow: inset 3px 3px 2px lightgrey, inset -3px -3px 2px darkgrey;
+}
+.btn3{
+    display: flex;
+    justify-content: space-between;
+}
+.btn3>button{
+    width: 98px;
+    height: 55px;
+    border: none;
+    background-color: white;
+    font-weight: bolder;
+    font-size: 16px;
+}
+.btn3>button:hover{
+    background-color: rgb(223, 223, 223);
+}
+.btn3>#diff{
+    background-color: rgb(241, 239, 239);
+    font-size: 16px;
+    font-weight: unset;
+}
+.btn3>#diff:hover{
+    background-color: rgb(223, 223, 223);
+}
